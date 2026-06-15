@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BGMI 4.4 PREMIUM MOD"
+        android:text="ONECORE PREMIUM MOD"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -52,6 +52,15 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/open_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Admin Panel"
+        android:background="#FF5722"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"/>
 
     <Button
         android:id="@+id/close_menu"

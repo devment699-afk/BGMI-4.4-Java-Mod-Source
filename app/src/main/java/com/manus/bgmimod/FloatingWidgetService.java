@@ -73,6 +73,17 @@ public class FloatingWidgetService extends Service {
         // The root layout of the floating widget (the menu itself)
         mExpandedMenu = mFloatingWidgetView.findViewById(R.id.floating_menu_root);
 
+        // Set the open panel button
+        Button openPanelButton = mFloatingWidgetView.findViewById(R.id.open_panel);
+        openPanelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://darkdevel.dynamicflash.xyz/connect"));
+                browserIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(browserIntent);
+            }
+        });
+
         // Set the close button
         Button closeButton = mFloatingWidgetView.findViewById(R.id.close_menu);
         closeButton.setOnClickListener(new View.OnClickListener() {
