@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_menu_root"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="#CC000000"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BGMI 4.4 PREMIUM MOD"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ESP Features -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Visuals" android:textColor="#00FF00" android:textStyle="bold" />
+            <CheckBox android:id="@+id/esp_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable ESP" android:textColor="#FFFFFF" />
+            <CheckBox android:id="@+id/hide_esp_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hide ESP (Recording)" android:textColor="#FFFFFF" />
+            <CheckBox android:id="@+id/sketch_line_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sketch Line" android:textColor="#FFFFFF" />
+
+            <!-- Aimbot Features -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Combat" android:textColor="#FF0000" android:textStyle="bold" android:layout_marginTop="10dp"/>
+            <CheckBox android:id="@+id/aimbot_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aimbot" android:textColor="#FFFFFF" />
+            <CheckBox android:id="@+id/bullet_track_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bullet Track" android:textColor="#FFFFFF" />
+            <CheckBox android:id="@+id/magic_bullet_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Magic Bullet" android:textColor="#FFFFFF" />
+
+            <!-- Skin Features -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Skins" android:textColor="#FFFF00" android:textStyle="bold" android:layout_marginTop="10dp"/>
+            <CheckBox android:id="@+id/xsuit_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X-Suits Skins" android:textColor="#FFFFFF" />
+            <CheckBox android:id="@+id/gun_skin_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gun Skins" android:textColor="#FFFFFF" />
+            <CheckBox android:id="@+id/car_skin_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Car Skins" android:textColor="#FFFFFF" />
+            <CheckBox android:id="@+id/loot_box_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loot Box Skins" android:textColor="#FFFFFF" />
+            <CheckBox android:id="@+id/kill_msg_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kill Message Skins" android:textColor="#FFFFFF" />
+
+            <!-- Antiban -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Security" android:textColor="#00FFFF" android:textStyle="bold" android:layout_marginTop="10dp"/>
+            <CheckBox android:id="@+id/antiban_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Full Antiban (Internal)" android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/close_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hide Menu"
+        android:background="#444444"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
