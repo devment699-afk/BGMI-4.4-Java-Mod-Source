@@ -17,6 +17,13 @@ import android.widget.Toast;
 
 public class FloatingWidgetService extends Service {
 
+    static {
+        System.loadLibrary("bgmimod");
+    }
+
+    public native String getOffsetsInfo();
+
+
     private WindowManager mWindowManager;
     private View mFloatingWidgetView;
     private LinearLayout mExpandedMenu;
